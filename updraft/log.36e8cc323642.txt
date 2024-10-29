@@ -1,0 +1,98 @@
+0000.008 () Opened log file at time: Tue, 10 Sep 2024 14:21:37 +0000 on http://lab-100935439.local
+0000.008 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 8.1.29 (cgi-fcgi, Windows NT SIMRAN 10.0 build 22631 (Windows 11) AMD64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.9M | 6M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.008 () Free space on disk containing Updraft's temporary directory: 313507.3 MB
+0000.030 () Restore setup, now closing connection and starting restore over AJAX.
+0000.004 () Opened log file at time: Tue, 10 Sep 2024 14:21:37 +0000 on http://lab-100935439.local
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 8.1.29 (cgi-fcgi, Windows NT SIMRAN 10.0 build 22631 (Windows 11) AMD64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.5M | 6M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 () Free space on disk containing Updraft's temporary directory: 313507 MB
+0000.005 () Ensuring WP_Filesystem is setup for a restore
+0000.006 () WP_Filesystem is setup and ready for a restore
+0000.028 () Restore job started. Entities to restore: plugins, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.031 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\Users\spann\Local Sites\lab-100935439\app\public\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.034 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.037 () Entity: db
+0000.037 () restore_backup(backup_file=backup_2024-09-10-1355_lab100935439_60fe5da50b64-db.gz, type=db, info=a:0:{}, last_one=)
+0000.037 () Unpacking backup... (backup_2024-09-10-1355_lab100935439_60fe5da50b64-db.gz, 0.3 Mb)
+0000.037 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\Users\spann\Local Sites\lab-100935439\app\public\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.038 () Database successfully unpacked
+0000.038 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.049 () Using direct MySQL access; value of use_mysqli is: 1
+0000.050 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.122 () Max packet size: 32 MB
+0000.122 () Entering maintenance mode
+0000.122 () Enabling Maintenance mode&#8230;
+0000.140 () Backup of: http://lab-100935439.local
+0000.141 () Content URL: http://lab-100935439.local/wp-content
+0000.141 () Uploads URL: http://lab-100935439.local/wp-content/uploads
+0000.141 () Old table prefix: wp_
+0000.141 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.141 () Site information: multisite=0
+0000.141 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.143 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.143 () New table prefix: vb_
+0000.147 () Processing table (InnoDB): wp_options - will restore as: vb_options
+0000.331 () Atomic restore: dropping original table (wp_options)
+0000.345 () Atomic restore: renaming new table (vb_options) to final table name (wp_options)
+0000.356 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.371 () Processing table (InnoDB): wp_users - will restore as: vb_users
+0000.416 () Atomic restore: dropping original table (wp_users)
+0000.428 () Atomic restore: renaming new table (vb_users) to final table name (wp_users)
+0000.443 () Processing table (InnoDB): wp_usermeta - will restore as: vb_usermeta
+0000.480 () Atomic restore: dropping original table (wp_usermeta)
+0000.487 () Atomic restore: renaming new table (vb_usermeta) to final table name (wp_usermeta)
+0000.497 () Processing table (InnoDB): wp_commentmeta - will restore as: vb_commentmeta
+0000.528 () Atomic restore: dropping original table (wp_commentmeta)
+0000.538 () Atomic restore: renaming new table (vb_commentmeta) to final table name (wp_commentmeta)
+0000.551 () Processing table (InnoDB): wp_comments - will restore as: vb_comments
+0000.605 () Atomic restore: dropping original table (wp_comments)
+0000.615 () Atomic restore: renaming new table (vb_comments) to final table name (wp_comments)
+0000.629 () Processing table (InnoDB): wp_links - will restore as: vb_links
+0000.664 () Atomic restore: dropping original table (wp_links)
+0000.675 () Atomic restore: renaming new table (vb_links) to final table name (wp_links)
+0000.688 () Processing table (InnoDB): wp_postmeta - will restore as: vb_postmeta
+0000.730 () Atomic restore: dropping original table (wp_postmeta)
+0000.742 () Atomic restore: renaming new table (vb_postmeta) to final table name (wp_postmeta)
+0000.753 () Processing table (InnoDB): wp_posts - will restore as: vb_posts
+0000.813 () Atomic restore: dropping original table (wp_posts)
+0000.826 () Atomic restore: renaming new table (vb_posts) to final table name (wp_posts)
+0000.839 () Processing table (InnoDB): wp_term_relationships - will restore as: vb_term_relationships
+0000.888 () Atomic restore: dropping original table (wp_term_relationships)
+0000.900 () Atomic restore: renaming new table (vb_term_relationships) to final table name (wp_term_relationships)
+0000.911 () Processing table (InnoDB): wp_term_taxonomy - will restore as: vb_term_taxonomy
+0000.952 () Atomic restore: dropping original table (wp_term_taxonomy)
+0000.962 () Atomic restore: renaming new table (vb_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.977 () Processing table (InnoDB): wp_termmeta - will restore as: vb_termmeta
+0001.011 () Atomic restore: dropping original table (wp_termmeta)
+0001.022 () Atomic restore: renaming new table (vb_termmeta) to final table name (wp_termmeta)
+0001.034 () Processing table (InnoDB): wp_terms - will restore as: vb_terms
+0001.067 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0001.076 () Unlocking database and leaving maintenance mode
+0001.076 () Disabling Maintenance mode&#8230;
+0001.077 () Atomic restore: dropping original table (wp_terms)
+0001.086 () Atomic restore: renaming new table (vb_terms) to final table name (wp_terms)
+0001.097 () Finished: lines processed: 44 in 1.04 seconds
+0001.098 () Cleaning up rubbish...
+0001.098 () Begin search and replace (updraftplus_restored_db)
+0001.098 () [Database-replace-site-url] Database: search and replace site URL
+0001.098 () This option was not selected.
+0001.105 () Entity: plugins
+0001.105 () restore_backup(backup_file=backup_2024-09-10-1355_lab100935439_60fe5da50b64-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:70:"C:\Users\spann\Local Sites\lab-100935439\app\public/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0001.105 () Unpacking backup... (backup_2024-09-10-1355_lab100935439_60fe5da50b64-plugins.zip, 7.3 MB)
+0001.106 () Unzipping backup_2024-09-10-1355_lab100935439_60fe5da50b64-plugins.zip to C:/Users/spann/Local Sites/lab-100935439/app/public/wp-content/upgrade/f5c06134/ using UpdraftPlus_ZipArchive, starting index 0
+0007.728 () Unzip progress: 1002 out of 1429 files (21.7 MB, plugins/updraftplus/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php)
+0020.188 () Unzip progress: 1429 out of 1429 files (24.7 MB, plugins/updraftplus/vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-tasks-activation.php)
+0020.190 () Moving old data: filesystem method / updraft_dir is potentially possible
+0020.190 () Moving old data: can potentially use wp_filesystem method / -old
+0020.190 () Moving old data out of the way...
+0020.302 () Top-level entities being moved: index.php, updraftplus
+0020.304 () Moving unpacked backup into place...
+0020.377 () Top-level entities being moved: index.php, updraftplus
+0020.379 () Cleaning up rubbish...
+0020.385 () Entity: others
+0020.385 () restore_backup(backup_file=backup_2024-09-10-1355_lab100935439_60fe5da50b64-others.zip, type=others, info=a:2:{s:4:"path";s:62:"C:\Users\spann\Local Sites\lab-100935439\app\public/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0020.385 () Unpacking backup... (backup_2024-09-10-1355_lab100935439_60fe5da50b64-others.zip, 0 MB)
+0020.386 () Unzipping backup_2024-09-10-1355_lab100935439_60fe5da50b64-others.zip to C:/Users/spann/Local Sites/lab-100935439/app/public/wp-content/upgrade/e53a7a5f/ using UpdraftPlus_ZipArchive, starting index 0
+0020.389 () Unzip progress: 1 out of 1 files (28 B, index.php)
+0020.391 () Cleaning up rubbish...
+0020.403 () Restore successful!
+0020.403 () Restore successful
